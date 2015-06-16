@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+.yazi{
+border-bottom:1px dotted silver;
+margin-bottom:15px;
+}
+body{
+background: url('../img/lnbg.png') repeat scroll 0% 0% #FFF;
+padding-top: 70px;
+}
+.ana_seh_qruplar{
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-right: 5px;
+  min-height: 15px;
+  padding: 6px;
+}
+.btn_elave_et{
+margin-top: -35px;
+margin-right: 10px;
+}
+
+.telebe{
+font-size: 20px;
+font-weight: bold;
+color: rgb(44, 0, 247);
+}
+.qrup-sec{
+  float: left;
+  height:28px;
+  max-width: 10%;
+  margin-top: 4px;
+  padding: 0px 0px !important;
+}
+.fenn-sec{
+  float: left;
+  height:28px;
+  max-width: 50%;
+  margin:4px 0px;
+  padding: 0px 0px !important;
+}
+.secim_sec{
+  float: left;
+  height:28px;
+  max-width: 20%;
+  margin:4px 0px;
+  padding: 0px 0px !important;
+}
+.telebe_sec{
+  float: left;
+  height:28px;
+  max-width: 50%;
+  margin:4px 0px;
+  padding: 0px 0px !important;
+}
+.qiymet_yaz{
+  float: left;
+  height:28px;
+  max-width: 20%;
+  margin:4px 0px;
+  padding: 0px 0px !important;
+}
+.lbl_qiymet_yaz{
+  font-size: 13px;
+  margin-top: 5px;
+  margin-right: 5px;
+  min-width: 20%;
+  min-height: 15px;
+  padding: 6px;
+}
+.post{
+margin:15px;
+}
+.son-paylasim{
+border-bottom:1px solid #337AB7;
+padding-bottom: 5px;
+}
+.qiymetleri_yenile_basliq{
+border-bottom: 1px dotted #337AB7;    
+}
+.progress-cell {
+  width: 50%;
+}
