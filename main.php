@@ -1,8 +1,8 @@
-﻿<?php
+<?php
 session_start();
 if(!isset($_SESSION['id']))
 {
-header('Location: http://localhost/dis/index.php');
+header('Location: '.$site_url.'index.php');
 }
 else{
 if ($_SESSION['login_type'] == 'm'){
