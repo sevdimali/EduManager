@@ -10,8 +10,8 @@ include("functions.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EduManager v1.0</title>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="stil.css" rel="stylesheet">
+<link href="<?php echo $site_url; ?>css/bootstrap.css" rel="stylesheet">
+<link href="<?php echo $site_url; ?>stil.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,10 +33,10 @@ $sorgu = "select * from muellim where email='$email' and parol='$password'";
 $tap_netice = mysql_query($sorgu);
 
 $goster_netice = mysql_fetch_array($tap_netice);
-if(mysql_num_rows($tap_netice)>1){
+if(mysql_num_rows($tap_netice)>0){
 	$_SESSION['login_type'] = 'm';
 	$_SESSION['id'] = $goster_netice["id"];
-	header('Location: http://localhost/dis/main.php');
+	header('Location: '.$site_url.'main.php');
 	}
 	elseif(mysql_num_rows($tap_netice)==0)
 	{
@@ -45,7 +45,7 @@ if(mysql_num_rows($tap_netice)>1){
 	if(mysql_num_rows($tap_netice)==1){
 	$_SESSION['login_type'] = 't';
 	$_SESSION['id'] = $goster_netice["id"];
-	header('Location: http://localhost/dis/main.php');
+	header('Location: '.$site_url.'main.php');
 	}
 	}
 		elseif(mysql_num_rows($tap_netice)==0)
