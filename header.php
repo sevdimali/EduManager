@@ -12,15 +12,15 @@ include("functions.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-<link rel="stylesheet" href="http://localhost/dis/js/morris.js/0.5.1/morris.css">
-<script src="http://localhost/dis/js/raphael.js"></script>
-	<script src="http://localhost/dis/js/jquery.js"></script>
-<script src="http://localhost/dis/js/morris.js/0.5.1/morris.min.js"></script>
+<link rel="stylesheet" href="<?php echo $site_url; ?>js/morris.js/0.5.1/morris.css">
+<script src="<?php echo $site_url; ?>js/raphael.js"></script>
+	<script src="<?php echo $site_url; ?>js/jquery.js"></script>
+<script src="<?php echo $site_url; ?>js/morris.js/0.5.1/morris.min.js"></script>
  
  
     <!-- Le styles -->
-    <link href="http://localhost/dis/css/bootstrap.css" rel="stylesheet">
-    <link href="http://localhost/dis/css/style.css" rel="stylesheet">
+    <link href="<?php echo $site_url; ?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $site_url; ?>css/style.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,20 +37,20 @@ include("functions.php");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://localhost/dis/main.php">
+      <a class="navbar-brand" href="<?php echo $site_url; ?>main.php">
        EduManager v1.0
       </a>
     </div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-	  <li><a href="http://localhost/dis/neticeler/qiymet_yaz.php">Qiymətləri Yenilə</a></li>
-	  <li><a href="http://localhost/dis/yenifenn.php">Yeni Fənn Qeydiyyatı</a></li>
-      <li><a href="http://localhost/dis/yeniqrup.php">Yeni Qrup Qeydiyyatı</a></li>
+	  <li><a href="<?php echo $site_url; ?>neticeler/qiymet_yaz.php">Qiymətləri Yenilə</a></li>
+	  <li><a href="<?php echo $site_url; ?>yenifenn.php">Yeni Fənn Qeydiyyatı</a></li>
+      <li><a href="<?php echo $site_url; ?>yeniqrup.php">Yeni Qrup Qeydiyyatı</a></li>
       <?php
 $login_id = mysql_real_escape_string($_SESSION['id']);
-if (is_admin(1) == true){
-    echo '<li><a href="http://localhost/dis/qeydiyyat.php">Müəllim Qeydiyyatı</a></li>';
-    echo '<li><a href="http://localhost/dis/qeydiyyatt.php">Tələbə Qeydiyyatı</a></li>';
+if (is_admin($login_id) == true){
+    echo '<li><a href="'.$site_url.'qeydiyyat.php">Müəllim Qeydiyyatı</a></li>';
+    echo '<li><a href="'.$site_url.'qeydiyyatt.php">Tələbə Qeydiyyatı</a></li>';
 }
 ?>
 	  </ul>
