@@ -1,4 +1,3 @@
-﻿
 <?php 
 /*Header*/
 include("configM.php");
@@ -14,8 +13,8 @@ include("functions.php");
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://localhost/dis/css/bootstrap.css" rel="stylesheet">
-    <link href="http://localhost/dis/css/style.css" rel="stylesheet">
+    <link href="<?php echo $site_url; ?>css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $site_url; ?>css/style.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,14 +31,14 @@ include("functions.php");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://localhost/dis/main.php?id_muellim=<?php echo $_GET["id_muellim"];?>">
+      <a class="navbar-brand" href="<?php echo $site_url; ?>main.php?id_muellim=<?php echo $_GET["id_muellim"];?>">
        EduManager v1.0
       </a>
     </div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-	  <li><a href="http://localhost/dis/yenifenn.php?id_muellim=<?php echo $_GET["id_muellim"];?>">Yeni Fənn Qeydiyyatı</a></li>
-      <li><a href="http://localhost/dis/yeniqrup.php?id_muellim=<?php echo $_GET["id_muellim"];?>">Yeni Qrup Qeydiyyatı</a></li>
+	  <li><a href="<?php echo $site_url; ?>yenifenn.php?id_muellim=<?php echo $_GET["id_muellim"];?>">Yeni Fənn Qeydiyyatı</a></li>
+      <li><a href="<?php echo $site_url; ?>yeniqrup.php?id_muellim=<?php echo $_GET["id_muellim"];?>">Yeni Qrup Qeydiyyatı</a></li>
 	  </ul>
 	  <ul class="nav navbar-nav navbar-right">
 	  <li class="dropdown">
