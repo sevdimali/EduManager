@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*yazilar, Xəbərlər, Elanlar*/
 ?>
 <div class="row">
