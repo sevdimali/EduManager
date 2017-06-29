@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include ("../functions.php");
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -28,10 +28,10 @@ $sql = "INSERT INTO netice (id_telebe, secim, tarix, id_fenn, id_muellim, qiymet
     
     if (!$sql_net){
   echo '<span class="label label-warning">Xəta baş verdi əvvəlki səhifəyə yönləndirlirsiniz...</span>';
-                header("Refresh: 2; url=http://localhost/dis/neticeler/qiymet_yaz.php");
+                header('Refresh: 2; url='.$site_url.'neticeler/qiymet_yaz.php');
 } else {
         echo '<span class="label label-success">Qiymət uğurla yazıldı.</span>';
-       header("Refresh: 2; url=http://localhost/dis/neticeler/qiymet_yaz.php");
+       header('Refresh: 2; url='.$site_url.'neticeler/qiymet_yaz.php');
  }
 }
 
