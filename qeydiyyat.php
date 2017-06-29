@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /*Header*/
 include("configM.php");
 include("functions.php");
@@ -26,7 +26,7 @@ die();
 <body>
 <div class="container-fluid">
 		<div class="row">
-        <a href="http://localhost/dis/main.php">Ana Səhifə</a>		
+        <a href="<?php echo $site_url; ?>main.php">Ana Səhifə</a>		
 <div class="col-md-6 col-md-offset-3">
 <div class="panel panel-default">
   <div class="panel-heading">
