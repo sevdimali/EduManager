@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 session_start();
 include("functions.php");
@@ -16,14 +16,14 @@ $sql = "INSERT into yazilar (id_yazar, tip_yazar, tarix, qrup, yazi) VALUES ('$i
 $net = mysql_query($sql);
 if (!$net){
 echo '<span class="label label-warning">Xəta baş verdi. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 2; url=http://localhost/dis/main.php");
+                header("Refresh: 2; url='.$site_url.'main.php");
 }else{
         echo '<span class="label label-success">Xəbər paylaşıldı. Ana səhifəyə yönləndirilirsiniz...</span>';
-                header("Refresh: 2; url=http://localhost/dis/main.php");
+                header("Refresh: 2; url='.$site_url.'main.php");
 }
 
 }
 else{ echo'<span class="label label-warning">Xəta baş verdi. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 2; url=http://localhost/dis/main.php");
+                header("Refresh: 2; url='.$site_url.'main.php");
 }
 ?>
