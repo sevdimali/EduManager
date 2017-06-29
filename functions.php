@@ -370,14 +370,14 @@ $sql = "Select distinct concat(telebeler.ad,' ',telebeler.soyad) as ad_soyad fro
         echo substr($html,0,-2);
 }
 function is_admin($id){
-$query = "select * from muellim where id = '$id' and status = 'admin'";
+$query = "select * from muellim where id = '$id' and status = 1";
 $tap_netice = mysql_query($query);
 $neticeler = mysql_num_rows($tap_netice);
 if ($neticeler > 0){
     return true;
 }
 else{
-    return false;
+    echo $query;
 }
 }
 function telebe_qrup($id){
