@@ -39,7 +39,7 @@
 								$class="";
 								$tap_fenn = mysql_query("select * from fenler where id_muellim='$id_muellim';");
 								while($goster_fenn = mysql_fetch_array($tap_fenn)){
-								echo '<li class="list-group-item"><a href="http://localhost/dis/result.php?nav=net&id='.$goster_fenn["id"].'">'.$goster_fenn["ad"].'</a></li>';
+								echo '<li class="list-group-item"><a href="'.$site_url.'result.php?nav=net&id='.$goster_fenn["id"].'">'.$goster_fenn["ad"].'</a></li>';
 								}
 								?>
 							</ul>
