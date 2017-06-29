@@ -19,10 +19,10 @@ $sql = "INSERT INTO qrup (ad, fakulte, ixtisas, sobe, bolme) values('$qrup_ad', 
         $net = mysql_query($sql);
         if(!$net){
             echo '<span class="label label-warning">Xəta baş verdi. Qrup qeydiyyatı tamamlanmadı. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-            //    header("Refresh: 5; url=http://localhost/dis/yeniqrupp.php");
+            //    header("Refresh: 5; url='.$site_url.'yeniqrupp.php");
         }else{
                 echo '<span class="label label-success">Qrup qeydiyyatı uğurla tamamlandı. Ana səhifəyə yönləndirilirsiniz...</span>';
-                header("Refresh: 5; url=http://localhost/dis/main.php");
+                header("Refresh: 5; url='.$site_url.'main.php");
         }
     
 ?>
