@@ -26,10 +26,10 @@ $sql = "INSERT INTO fenler (id_qrup, id_muellim, ixtisas, ad, saat, lab_saat, mu
         $net = mysql_query($sql);
         if(!$net){
             echo '<span class="label label-warning">Xəta baş verdi. Fənn qeydiyyatı tamamlanmadı. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 5; url=http://localhost/dis/yenifenn.php");
+                header("Refresh: 5; url='.$site_url.'yenifenn.php");
         }else{
                 echo '<span class="label label-success">Fənn qeydiyyatı uğurla tamamlandı. Ana səhifəyə yönləndirilirsiniz...</span>';
-                header("Refresh: 5; url=http://localhost/dis/main.php");
+                header("Refresh: 5; url='.$site_url.'main.php");
         }
     
 ?>
