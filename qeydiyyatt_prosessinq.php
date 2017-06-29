@@ -15,7 +15,7 @@ if (
     !isset($_POST["sifre"]) 
     ){
     echo '<span class="label label-warning">Hansısa sahə doldurulmayıb. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 5; url=http://localhost/dis/qeydiyyatt.php");
+                header("Refresh: 5; url='.$site_url.'qeydiyyatt.php");
 
 }
 else {
@@ -36,14 +36,14 @@ $sql = "INSERT into telebeler (id_qrup, ad, soyad, ata_ad, fakulte, tel, parol, 
 $net = mysql_query($sql);
 if (!$net){
 echo '<span class="label label-warning">Xəta bas verdi. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 5; url=http://localhost/dis/qeydiyyatt.php");
+                 header("Refresh: 5; url='.$site_url.'qeydiyyatt.php");
 }else{
         echo '<span class="label label-success">Əlavə olundu. Əvvəlki səhifəyə yönləndirilirsiniz...</span>';
-                header("Refresh: 5; url=http://localhost/dis/qeydiyyatt.php");
+                 header("Refresh: 5; url='.$site_url.'qeydiyyatt.php");
 }
 }
 }
 else{ echo'<span class="label label-warning">Xəta bas verdi. Əməliyyatı təkrarlamalı olacaqsınız...</span>';
-                header("Refresh: 5; url=http://localhost/dis/qeydiyyatt.php");
+                 header("Refresh: 5; url='.$site_url.'qeydiyyatt.php");
 }
 ?>
