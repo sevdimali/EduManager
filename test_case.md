@@ -5,14 +5,14 @@
 * [x]    LanguageInfo.xml
 * [x]    README.md
     
-    DefInjected
-        ConceptDef
-            Example_Concepts.xml
+* []    DefInjected
+- []        ConceptDef
+- []            Example_Concepts.xml
             
-        TraitDef
-            Example_Traits.xml
+* []        TraitDef
+- []           Example_Traits.xml
             
-    Keyed
+* []     Keyed
 * [x]        Alerts.xml
 * [x]        Credits.xml
 * [x]        Dates.xml
