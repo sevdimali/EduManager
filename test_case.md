@@ -1,9 +1,9 @@
 # Progress
 
-*[x]		FriendlyName.txt
-*[x]   LangIcon.png
-*[x]    LanguageInfo.xml
-*[x]    README.md
+* [x]		FriendlyName.txt
+* [x]   LangIcon.png
+* [x]    LanguageInfo.xml
+* [x]    README.md
     
     DefInjected
         ConceptDef
@@ -13,10 +13,10 @@
             Example_Traits.xml
             
     Keyed
-*[x]        Alerts.xml
-*[x]        Credits.xml
-*[x]        Dates.xml
-*[x]        Designators.xml
+* [x]        Alerts.xml
+* [x]        Credits.xml
+* [x]        Dates.xml
+* [x]        Designators.xml
         Dialogs_Various.xml
         Dialog_StatsReports.xml
         Dialog_Trees.xml
